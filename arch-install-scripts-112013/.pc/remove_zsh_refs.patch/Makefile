@@ -27,9 +27,11 @@ check: all
 install: all
 	install -dm755 $(DESTDIR)$(PREFIX)/bin
 	install -m755 $(BINPROGS) $(DESTDIR)$(PREFIX)/bin
+	install -Dm644 zsh-completion $(DESTDIR)$(PREFIX)/share/zsh/site-functions/_archinstallscripts
 
 uninstall:
 	for f in $(BINPROGS); do $(RM) $(DESTDIR)$(PREFIX)/bin/$$f; done
+	$(RM) $(DESTDIR)$(PREFIX)/share/zsh/site-functions/_archinstallscripts
 
 dist:
 	git archive --format=tar --prefix=arch-install-scripts-$(VER)/ v$(VER) | gzip -9 > arch-install-scripts-$(VER).tar.gz

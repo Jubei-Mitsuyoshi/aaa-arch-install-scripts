@@ -5,10 +5,12 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ --with autotools-dev
+	dh $@
 
-
-override_dh_auto_configure:
-	dh_auto_configure -- --enable-doc
 	
-override_dh_auto_test:
+override_dh_auto_build:
+	make PREFIX=/usr
+
+
+override_dh_auto_install:
+	make PREFIX=/usr install
