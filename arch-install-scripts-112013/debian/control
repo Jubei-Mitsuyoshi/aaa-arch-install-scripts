@@ -12,5 +12,7 @@ Package: arch-devtools
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, bash, coreutils, archlinux-pacman, util-linux
 Description: archlinux devtools mainly
- scripts
+ scripts packaged for debian to facilitate
+a archlinux chroot environment naitivly
+on debian
  
