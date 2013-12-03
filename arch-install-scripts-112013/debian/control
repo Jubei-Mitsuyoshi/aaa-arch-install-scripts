@@ -13,4 +13,6 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, bash, coreutils, archlinux-pacman, util-linux
 Description: archlinux devtools mainly
  scripts
- 
+ .
+ Braught to debian to facilitate running a naitive
+ arch chroot under debian
