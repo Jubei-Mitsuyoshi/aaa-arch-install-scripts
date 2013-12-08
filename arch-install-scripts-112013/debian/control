@@ -4,15 +4,11 @@ Priority: optional
 Maintainer: Jubei Mitsuyoshi <jubei.house.of.five.masters@gmail.com>
 Build-Depends: debhelper (>= 9.0.0)
 Standards-Version: 3.9.4
-Homepage: https://www.archlinux.org/pacman/#_releases
-#Vcs-Git: git://git.debian.org/collab-maint/archlinux-pacman.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/archlinux-pacman.git;a=summary
+Homepage: https://projects.archlinux.org/arch-install-scripts.git
 
-Package: arch-devtools
-Architecture: any
+Package: arch-install-scripts
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, bash, coreutils, archlinux-pacman, util-linux
-Description: archlinux devtools mainly
- scripts
- .
+Description: archlinux install scripts
  Braught to debian to facilitate running a naitive
  arch chroot under debian
